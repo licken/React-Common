@@ -45,13 +45,16 @@ function getDefaultModules() {
         loader: 'style-loader!css-loader!stylus-loader'
       },
       {
-        test: /\.(png|jpg|gif|woff|woff2)$/,
+        test: /\.(png|jpg|gif)$/,
         loader: 'url-loader?limit=8192'
       },
       {
         test: /\.(mp4|ogg|svg)$/,
         loader: 'file-loader'
-      }
+      },
+      /*{test: /\.(eot|woff|woff2|svg|ttf)([\?]?.*)$/, loader: 'url?prefix=font/&limit=10000'}*/
+      { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'url-loader?limit=10000&mimetype=application/font-woff' },
+      { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'file-loader' }
     ]
   };
 }

@@ -61,10 +61,14 @@
     "webpack-dev-server": "^1.12.0"
   },
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "core-js": "^2.0.0",
+    "font": "0.0.4",
+    "font-awesome": "^4.6.3",
     "normalize.css": "^4.0.0",
     "path": "^0.12.7",
     "react": "^15.0.0",
+    "react-data-components": "^1.1.0",
     "react-dom": "^15.0.0"
   }
 }
