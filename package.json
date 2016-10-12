@@ -61,6 +61,7 @@
     "webpack-dev-server": "^1.12.0"
   },
   "dependencies": {
+    "antd": "^2.0.1",
     "bootstrap": "^3.3.7",
     "core-js": "^2.0.0",
     "font": "0.0.4",
